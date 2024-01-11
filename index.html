@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>OreoStream - Streaming Gratuit de Films et Séries</title>
     <style>
-        body { background-color: #363636; color: #FFA500; margin: 0; font-family: Arial, sans-serif; }
-        header { background-color: #363636; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
-        h1 { margin: 0; font-size: 30px; color: #FFA500; }
-        .container2 { display: inline-flex; align-items: center; height: 70px; width: 200px; overflow: hidden; }
-        .logo { font-size: 25px; color: #FFA500; transition: transform 0.3s ease, color 0.3s ease; }
-        .logo:hover { transform: scale(1.2); color: #2F4F4F; }
-        .download-btn { background-color: #ED760C; color: #363636; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
-        .download-btn:hover { background-color: #FFA500; }
-        .short-title, .mli-eps { color: #CCCCCC; }
-        .short-mask .fa-play-circle { content: "\f04b"; color: #ED760C; font-size: 25px; }
-        .footer { background-color: #363636; padding: 20px; text-align: center; }
-        .movie-card {
-            background-color: #363636;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .movie-title { font-size: 20px; color: #FFA500; margin-bottom: 10px; cursor: pointer; }
-        .movie-description { color: #CCCCCC; }
-        .movie-link { color: #FFA500; text-decoration: none; cursor: pointer; }
-        .movie-link:hover { text-decoration: underline; }
-        .iframe-dialog { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px; border: none; }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f48625;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
-<body class="js">
+
+<body>
     <header>
-        <div class="container2">
-            <div class="logo">OreoSDB</div>
-        </div>
-        <button class="download-btn">Telecharger l'APP</button>
+        <h1>OreoStream</h1>
     </header>
 
-    <div class="movie-card" style="background-image: url('https://image.tmdb.org/t/p/w300/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg');">
-        <h2 class="movie-title"><a class="movie-link" href="https://uqload.io/embed-8cc1qx0ske4n.html")">Napoléon (2023)</a></h2>
-        <p class="movie-description">Fresque spectaculaire, Napoléon s'attache à l'ascension et à la chute de l'Empereur Napoléon Bonaparte. Le film retrace la conquête acharnée du pouvoir par Bonaparte à travers le prisme de ses rapports passionnels et tourmentés avec Joséphine, le grand amour de sa vie. Auteur d'épopées mémorables, Ridley Scott évoque le génie militaire ainsi que les stratégies politiques de Napoléon, tout en mettant en scène des séquences de bataille parmi les plus impressionnantes jamais filmées.</p>
-    </div>
+    <section>
+        <h2>Streaming Gratuit de Séries TV et Films en Français</h2>
+        <p>OreoStream est une application de streaming de séries TV et de films qui vous permet de profiter de vos contenus préférés en ligne. Avec une interface utilisateur conviviale et des fonctionnalités avancées, OreoStream vous offre une expérience de visionnage de haute qualité où que vous soyez.</p>
+        <a href="https://github.com/saqoah/OreoStream" class="cta-button">Commencer à regarder</a>
+    </section>
 
-    <div class="movie-card" style="background-image: url('https://image.tmdb.org/t/p/w300/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg');">
-        <h2 class="movie-title"><a class="movie-link" href="YOUR_LINK_HERE">Movie 2</a></h2>
-        <p class="movie-description">Description for Movie 2 goes here.</p>
-    </div>
-
-    <div class="footer">
-        <!-- Your footer content here -->
-    </div>
-
+    <footer>
+        &copy; 2024 OreoStream - Tous droits réservés
+    </footer>
 </body>
+
 </html>
